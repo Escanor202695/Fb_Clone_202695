@@ -18,8 +18,8 @@ function Post({caption , src , time}) {
         </div>
       </div>
       <p className="px-5 pb-2 font-normal text-lg">{caption}</p>
-      <div className="relative">
-        <img src={`/images/${src}`} className="w-full" />
+      <div className="relative h-80">
+        <Image src={`/images/${src}`} objectFit="cover" layout="fill" />
       </div>
       <div className="flex justify-between cursor-pointer py-3">
         <div className="postIconGroup">

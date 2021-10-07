@@ -33,7 +33,7 @@ function Stories(props) {
     return (
         <div className="flex justify-center space-x-3 mt-7">
             {stories.map(story=>(
-                <StoryCard name={story.name} src={story.src}
+                <StoryCard name={story.name} key={story.src} src={story.src}
                 profile ={story.profile}/>
             ))}
             
